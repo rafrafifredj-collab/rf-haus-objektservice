@@ -19,7 +19,6 @@
 
 
 <title>RF-Haus Objektservice | Rastatt und Umgebung</title>
-
 <style>
 :root{--navy:#102638;--navy2:#18384b;--gold:#d8ad55;--goldlight:#f0d99f;--ink:#1b2b36;--muted:#60717d;--paper:#f5f7f8;--white:#fff;--line:#e1e7eb;--radius:20px;--shadow:0 16px 45px rgba(16,38,56,.12)}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:92px}body{margin:0;color:var(--ink);background:white;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}a{color:inherit}.wrap{width:min(1160px,calc(100% - 40px));margin-inline:auto}.topbar{background:#0b1c29;color:#e8edf0;font-size:.88rem}.topbar .wrap{min-height:38px;display:flex;align-items:center;justify-content:space-between;gap:14px}.topbar a{text-decoration:none}header{position:sticky;top:0;z-index:20;background:rgba(16,38,56,.98);color:white;box-shadow:0 5px 25px rgba(0,0,0,.1)}.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{text-decoration:none;font-size:1.27rem;font-weight:850;letter-spacing:-.035em;white-space:nowrap}.brand span{color:var(--gold)}.navlinks{display:flex;align-items:center;gap:26px}.navlinks a{text-decoration:none;color:#e9eef1;font-weight:650;font-size:.95rem}.navlinks a:hover{color:var(--goldlight)}.nav-cta{background:var(--gold);color:var(--navy)!important;padding:11px 17px;border-radius:10px}
@@ -29,6 +28,27 @@
 @media(max-width:620px){.wrap{width:min(calc(100% - 30px),1160px)}.topbar .wrap{justify-content:center;text-align:center;min-height:34px;font-size:.78rem}.topbar .right{display:none}.nav{align-items:flex-start}.brand{font-size:1.16rem;padding-top:4px}.navlinks{width:100%;justify-content:space-between;gap:8px}.navlinks a{font-size:.83rem}.nav-cta{padding:7px 10px}.hero{min-height:0;background-position:60% center}.hero-content{padding:72px 0}.hero h1{font-size:clamp(2.45rem,11vw,3.5rem)}.hero p{font-size:1.03rem}.actions{display:grid;grid-template-columns:1fr}.btn{width:100%}.trustline{gap:10px 16px;font-size:.82rem}.section{padding:64px 0}.service-grid,.split,.steps,.contact-grid{grid-template-columns:1fr}.service-card img{height:220px}.photo-frame img{height:300px}.photo-label{left:10px;bottom:12px}.section-head{margin-bottom:28px}.contact-card,.contact-panel{padding:23px}.legal .wrap{display:block}.mobile-cta{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:30;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(11,28,41,.97);gap:10px;box-shadow:0 -5px 22px rgba(0,0,0,.12)}.mobile-cta .btn{min-height:44px;padding:10px 12px;font-size:.9rem}body{padding-bottom:76px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
 </style>
+  .brand {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.brand img {
+  display: block;
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+@media (max-width: 620px) {
+  .brand img {
+    width: 56px;
+    height: 56px;
+  }
+}
 </head>
 <body>
 <div class="topbar"><div class="wrap"><span>Objektbetreuung · Hausmeisterservice · Rastatt und Umgebung</span><span class="right">Besichtigung und Angebot unverbindlich anfragen</span></div></div>
